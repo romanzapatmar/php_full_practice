@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- <p>Roman</p>
+  <p id="demo"></p> -->
+
+    <input type="text" name="number" id="number">
+    <button type="button" onclick="myFunc()">submit</button>
+
+  <p id="demo"></p>
+
+  <script>
+    // document.getElementById('demo').innerHTML="Hello Roman";
+    // function myfunc(){
+    //     document.getElementById('demo').innerHTML="Radhe";
+    // }
+    // const myName = document.getElementsByTagName('p');
+    // document.getElementById('demo').innerHTML = "Welcome " + myName[0].innerHTML;
+    // function validateForm(){
+    //     let x = document.forms['myForm']['name'].value;
+    //     if(x == "")
+    //     {
+    //         alert("Name must be filled out");
+    //     }
+    // }
+
+    function myFunc(){
+        let userValue = document.getElementById("number").value;
+        let text;
+        if(isNaN(userValue) || userValue < 1 || userValue > 10)
+        {
+            text = "Number is not between 1 to 10";
+        }
+        else {
+            text = "Input OK";
+        }
+        document.getElementById('demo').innerHTML = text;
+    }
+
+  </script>
+</body>
+</html>

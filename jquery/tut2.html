@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Magic</title>
+    <link rel="stylesheet" href="bootstrap_file/css/bootstrap.css">
+    <!-- <style>
+        div {
+            margin: 30px;
+            height: 80px;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style> -->
+</head>
+<body>  
+    
+    <!-- <div>
+        <input type="text" id = "name" placeholder="Type name">
+    </div> -->
+    <button type="button" id="btn1">Click for 1</button>
+    <button type="button" id="btn2">Click for 2</button>
+    <p id="demo1">1</p>
+    <p id="demo2">2</p>
+
+    <script src="bootstrap_file/js/Jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="bootstrap_file/js/bootstrap.js"></script>
+
+    <script>
+        //trigger with focus
+        // $(document).ready(function(){
+        //     $("div").click(function(){
+        //         $("#name").trigger("focus");
+        //     })
+        // })
+
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                increase($("#demo1"))
+            })
+            $("#btn").click(function(){
+                $("#btn1").trigger("click");
+                increase($("#demo2"));
+            })
+
+            function increase(obj) {
+                var Text = parseInt(obj.Text(), 10);
+                obj.Text(Text + 1);
+            }
+        });
+
+
+    </script>
+</body>
+</html>

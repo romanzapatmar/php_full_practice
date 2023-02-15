@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+</head>
+<body>
+    <p id="myid">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex eum fugiat velit temporibus perferendis aperiam dolor laborum itaque sed quo corporis, animi maiores minima quos deserunt voluptate! Beatae, eius aperiam.</p>
+    <button onclick="myfunction()">Click me</button>
+    <p id="sum"></p>
+    <p id="data"></p>
+    <p id="mytimeid" class="mytimeid">Hello</p>
+    <p id="here"></p>
+    
+    
+    <script>
+        function myfunction() {
+            var n = 10;
+            for (i=1; i<=n; i++){
+                if(i%2==0){
+                    document.getElementById('mytimeid').innerHTML += i +'</br>';
+                    document.getElementById('mytimeid').style.color = 'red';
+                }else{
+                    document.getElementById('mytimeid').innerHTML += i+'</br>';
+                    document.getElementById('mytimeid').style.color = 'blue';
+                }
+            }
+            // document.getElementById('myid').style.color = 'red';
+        }
+        //should be use for testing
+        document.write();
+        //window.alert(5+6);
+
+      
+        let a = (100 + 5) * 5;
+        document.getElementById('sum').innerHTML ="The sum of a and b is:" + a;
+        let carName = 'I am your car';
+        console.log(carName);
+
+        //using function
+        // function myfunction(a, b) {
+        //     return a * b;
+        // }
+        // document.getElementById('data').innerHTML = myfunction(5, 6);
+
+       // let car = "Maruti";
+        const car = {
+            name : "maruti", 
+            price : "4,0000", 
+            color : 'red'
+        };
+        //two methods obj.property or obj[property]
+       // document.getElementById('data').innerHTML = car["name"] + " " + car["color"];
+
+        function displayTime(){
+            // document.getElementById('mytimeid').style.color = 'red';
+            var n = 10;
+            for (i=0; i<=n; i++){
+                if(i%2==0){
+                    document.getElementById('mytimeid').innerHTML = i;
+                }else{
+                    document.getElementById('mytimeid').innerHTML = i;
+                }
+            }
+        }
+
+        // let myName = "I am go website for web developers and when it occurs";
+        // document.getElementById('data').innerHTML = myName.includes('web');
+
+        // let mySelf = `I am the web for "websites"`;
+        // console.log(mySelf);
+        // let x = 10;
+        // let y = 30;
+        // let z = x + y;
+
+        // console.log(z);
+
+       // document.getElementById('data').innerHTML = 100 * "hjgghj";
+
+       //array
+
+       const myArray = [
+        "one", 
+        "two", 
+        "three",
+        "apple",
+        5,
+        8
+    ];
+    //    console.log(myArray.push('roman'));
+    //    console.log(myArray);
+    //    const num1 = [10, 20, 4, 45, 12];
+    //    const num2 = num1.map(checkFunc);
+    //    //document.getElementById('here').innerHTML = num1;
+    //    document.getElementById('here').innerHTML = num2;
+    //    function checkFunc(value)
+    //    {
+    //     return value * 2 + "</br>";
+    //    }
+
+       //filter
+       const num1 = [10, 20, 4, 45, 12];
+       const num2 = num1.filter(checkFunc);
+       //document.getElementById('here').innerHTML = num1;
+       document.getElementById('here').innerHTML = num2;
+       function checkFunc(value)
+       {
+        return value > 20;
+       }
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <div id="displayhere"></div>
+    <!-- <input type="color" id="chooseColor">
+    <button onclick="checkme()">Click me</button>
+    <p style="color: red" id="display"></p> -->
+    
+    <!-- <div id="demo">
+        <input type="text" id="name">
+    </div> -->
+
+    <script src="assets/js/jquery.js"></script>
+    <script>
+        //jquery methods .html() .val() .text()
+       // .html()
+        document.getElementById('demo').innerHTML = 'Hello Roman';
+
+        setTimeout(function(){
+            $('#demo').html('<h1>Welcome Roman</h1>');
+        }, 2000);
+        // setTimeout(function(){
+        //     alert($('#demo').html());
+        // }, 4000);
+
+        //.text()
+        // document.getElementById('demo').innerHTML = 'Hello Roman';
+
+        // setTimeout(function(){
+        //     $('#demo').text('<h1>Welcome Roman</h1>');
+        // }, 2000);
+
+        // setTimeout(function() {
+        //    alert($('#demo').text());
+        // }, 4000);
+        
+       
+
+       //.val()
+        
+        // document.getElementById('name').value = 'Steve Jobs';
+        // setTimeout(function() {
+        //     $('#name').val('welcome Steve');
+        // }, 2000);
+        // setTimeout(function() {
+        //    alert($('#name').val());
+        // }, 4000);
+        // function checkme() {
+        //     var color = document.getElementById('chooseColor').value;
+        //     document.getElementById('display').innerHTML = color;
+        // }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p >Click me here</p>
+     <p id="demo">Hello Javascript</p>
+     <button onclick="document.getElementById('demo').innerHTML = 'oops'">Click me</button>
+     <!-- <form action="action.php">
+        <input type="text" maxlength="100">
+        <input type="submit">
+     </form> -->
+
+    
+    <script>
+        //JSON.parse()
+        //.parse you can also use as an array format
+        // const myName = '{"name" : "john", "age" : 30, "city" : "New York"}';   //this is a JSON string
+        // const create = JSON.parse(myName);
+        // document.getElementById('demo').innerHTML = create.name + ", " + create.age + ", " + create.city;
+
+            //parse with function
+            //should not use parse with function
+        // const arr = '{"name" : "John", "age" : "function(){return 30;}", "city": "New York"}';
+        // const myObj = JSON.parse(arr);
+        // myObj.age = eval("("+ myObj.age +")")
+        // document.getElementById('demo').innerHTML = myObj.name + ", " + myObj.age();
+        
+        //JSON.stringify()
+        // const arr = ["name" : "John", "age" : 30, "city": "New York"];
+        // //const create = JSON.parse(arr);
+        // const create = JSON.stringify(arr);
+        // document.getElementById('demo').innerHTML = create.name;
+        // const myObj = {name:"John", age:30, city:"New York"};
+        // document.getElementById("demo").innerHTML = myObj.name;
+        
+        //stringify with function
+        // const arr = {name : "John", age : function(){return 30;}, city: "New York"};
+        // const myObj = JSON.stringify(arr);
+        // document.getElementById('demo').innerHTML = myObj;
+    
+
+        //creating a Object parsing with JSON
+        // const myArr = '{"name" : "Anthony", "age" : 30, "car" : "BMW"}';
+        // const myObj = JSON.parse(myArr);
+        // document.getElementById("demo").innerHTML = myObj.car; //accessing a js object, also we can access with brackets with []  i.e ['name']
+
+        //looping with an object 
+        // const myArr = '{"name" : "Anthony", "age" : 30, "car" : "BMW"}';
+        // const myObj = JSON.parse(myArr);
+        // document.getElementById("demo").innerHTML = myObj.name;
+
+        // let text = "";
+        // for (const x in myObj) {
+        //     text += myObj[x] + ", "; //accessing a object from js
+        // }
+        // document.getElementById("demo").innerHTML = text; //accessing a js object, also we can access with brackets with []  i.e ['name']
+
+        //access array object 
+        // const myArr = '{"name" : "Anthony", "age" : 30, "car" : "BMW"}';
+        // const myObj = JSON.parse(myArr);
+
+        // document.getElementById('demo').innerHTML = myObj.car; //accessing value from object
+
+        //const myArr = '{"name" : "admin", "age" : 14, "car" : "Rolls Royal"}';
+        // const myArr = '["pintu", "rani", "golu", "monu"]';
+        // const myObj = JSON.parse(myArr);
+        // document.getElementById("demo").innerHTML = myObj[2];
+       // document.getElementById("demo").style.color = "red";
+       
+
+
+
+    </script>
+</body>
+</html>

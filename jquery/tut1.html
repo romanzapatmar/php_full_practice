@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Magic</title>
+    <link rel="stylesheet" href="bootstrap_file/css/bootstrap.css">
+    <style>
+        #demo {
+            height: 40px;
+            width: 80px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>  
+    <!-- <form action="" id="myform">
+        <form id="myform">
+          <input type="text" name="name" required>
+          <br>
+          <button type="button">Validate!</button>
+        </form>
+    </form> -->
+    
+        <h1>Trigger</h1>
+    <div id="demo">
+        <button id="btn">Click to change</button> -->
+        <button id="btn1">1</button>
+        <button id="btn2">2</button>
+    </div>
+
+
+    <script src="bootstrap_file/js/Jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="bootstrap_file/js/bootstrap.js"></script>
+
+    <script>
+    //       let btn = document.querySelector('button');
+    //       let demo = document.querySelector('#demo');
+
+    //       btn.addEventListener('click', () => {
+    //         demo.click();
+    //        let clickEvent = new MouseEvent('click', {
+    //         shiftKey: true
+    //     });
+
+    //       demo.dispatchEvent(clickEvent);
+
+    //      });
+
+    //       demo.addEventListener('click', (e) => {
+    //         if(e) {
+    //             demo.style.backgroundColor = "green";
+    //         }
+    //       });
+
+
+        $(document).ready(function(){
+            $("#btn2").click("#btn2",function(){  
+                //alert('ok');  
+                $("#demo").load("tut2.html");
+            });
+        });
+
+
+    //trigger method in jquery
+    // $(document).ready(function(){
+    //     jQuery.validator.setDefaults({
+    //         debug: true,
+    //         success: "valid"
+    //     });
+    //     var form = $( "#myform" );
+    //         form.validate();
+    //     $( "button" ).click(function() {
+    //         alert( "Valid: " + form.valid() );
+    //     });
+    // });
+
+
+    </script>
+</body>
+</html>

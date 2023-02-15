@@ -1,0 +1,78 @@
+<html>
+  <body>
+      <head>
+        <meta charset="utf-8">
+        <title>How To Validate Password And Confirm Password Using JQuery - techsolutionstuff.com</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            #drag{
+                height: 70px;
+                width: 30%;
+                border: 1px solid red;
+                background-color: blue;
+            }
+        </style>
+      </head>
+      <div class="container" >
+        <textarea class="form-control" name="name" id="name" cols="30" rows="10">This is dummy Text</textarea>
+        <button id="editLoginHTML">Edit</button>
+      </div>
+      <div class="ui-widget-content" id="drag"></div>
+    </body>
+</html>
+<script>
+$(document).ready(function () {
+    $('textarea').attr('readonly', 'readonly');
+    // var a = 10;
+    // $('textarea').val(a);
+    // $('textarea').attr('readonly', 'readonly');
+
+   // alert(a);
+//login form html jquery start
+  //for edit function
+    $('#editLoginHTML').on('click', function () {
+        // alert('ok');
+    $('textarea').removeAttr('readonly');
+   
+    
+});
+ $(function(){
+        $('#drag').draggable(); 
+    });
+});
+</script>
+<!-- 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+  
+</head>
+<body>
+ 
+<div id="draggable" class="ui-widget-content">
+  <p>Drag me around</p>
+</div>
+ 
+ 
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+</body>
+</html> -->

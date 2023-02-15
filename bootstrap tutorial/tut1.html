@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap_file/css/bootstrap.css">
+    <script src="bootstrap_file/js/jquery.js"></script>
+    <title>bootstrap</title>
+    <style>
+       #panel, #flip {
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+        padding: 50px;
+        background-color: yellow;
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <button class="btn btn-primary">Click me</button>
+        <p>This is the first sentance</p>
+        <p>This is the second sentance</p> -->
+    
+       <div id="flip">Click me for slide down
+        <p id="panel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium commodi placeat neque, repellat iure aliquid, eum quaerat quos esse obcaecati nobis nesciunt veritatis ut perferendis temporibus illo dolores laboriosam rerum?</p>
+       </div>
+  
+       
+   
+       <script src="bootstrap_file/js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+            //toggle
+            // $('button').click(function(){
+            //     $('p').toggle();
+            // });
+
+            //hideandshow
+            // $('#show').click(function(){
+            //     $('p').show();
+            // });
+            // $('#hide').click(function(){
+            //     $('p').hide();
+            // });
+
+
+            //fadeIn have 3 property i.e (fadeIn(), fadeIn("slow"), fadeIn(3000)//time)
+            // $("button").click(function(){
+            //     $("div").fadeIn(2000);
+            // });
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+
+        });
+        
+    </script>
+
+    
+</body>
+</html>

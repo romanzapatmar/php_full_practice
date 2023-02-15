@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.new {
+    background-color: green;
+    text-align: center !important;
+}
+.new {
+    background-color: red !important;
+    text-align:left ;
+}
+.column {
+    columns: 3;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+<div class="new">
+    <h1>I am the web</h1>
+</div>
+<div class="column">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nesciunt veritatis, pariatur libero natus, aperiam rem nobis nam doloremque voluptas reiciendis velit ipsam? Error neque ratione dolore cumque in eligendi inventore, consectetur consequatur quae sapiente illo sequi magni culpa sed velit voluptatum assumenda repellat quibusdam at beatae voluptates labore modi. Harum temporibus voluptatem dolores hic aperiam quas cum saepe laudantium atque velit facere minima voluptatum ipsum esse voluptates nesciunt quae omnis exercitationem, natus, tenetur provident? Sequi, vero explicabo consequatur nam quas nihil maxime doloribus dolorum? Saepe itaque possimus eveniet, expedita fugit omnis recusandae maxime fuga! Doloribus aspernatur quia soluta fuga! Repellendus vitae esse, numquam excepturi aliquid quasi laborum! Possimus dignissimos ducimus iste non perspiciatis nihil voluptatum eos autem dolores mollitia!</p>
+</div>
+</body>
+</html>

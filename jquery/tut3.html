@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Magic</title>
+    <link rel="stylesheet" href="bootstrap_file/css/bootstrap.css">
+    <style>
+        /* #demo1{
+            margin: 30px;
+            height: 50px;
+            width: 90px;
+            background-color: red;
+            display: none;
+        }
+        #demo2{
+            margin: 30px;
+            height: 50px;
+            width: 90px;
+            background-color: green;
+            display: none;
+        }
+        #demo3{
+            margin: 30px;
+            height: 50px;
+            width: 90px;
+            background-color: blue;
+            display: none; */
+        /* } */
+
+        div{
+            height: 30px;
+            width: 60%;
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(247, 146, 13);
+        }
+        #panel {
+            height: 90px;
+            display: none;
+        }
+    </style>
+</head>
+<body>  
+    <!-- jquery fade-in
+    <button class="btn btn-primary">Click me</button>
+   <div id="demo1"></div>
+   <div id="demo2"></div>
+   <div id="demo3"></div> -->
+
+   <!-- jquery slides -->
+   <button id="stop">Stop</button>
+   <div id="flip">hello Roman</div>
+   <div id="panel">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio necessitatibus excepturi assumenda saepe praesentium cumque fuga molestias quis nihil quidem, doloribus delectus possimus labore voluptatibus ducimus sapiente sit illum enim!]</div>
+   
+
+    <script src="bootstrap_file/js/Jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="bootstrap_file/js/bootstrap.js"></script>
+
+
+    
+    <script>
+        //fade-in/out in jquery
+    //   $(document).ready(function(){
+    //      $("button").click(function(){
+    //          $("#demo1").fadeIn();
+    //          $("#demo2").fadeIn("slow");
+    //          $("#demo3").fadeIn(3000);
+    //      });
+    //   });
+
+   $(document).ready(function(){
+    $("#flip").click(function(){
+            $("#panel").slideDown(5000);
+        });
+    $("#stop").click(function(){
+            $("#panel").stop();
+        })
+   });
+ 
+     </script>
+</body>
+</html>

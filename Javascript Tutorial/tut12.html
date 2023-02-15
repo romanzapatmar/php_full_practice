@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #flip, #panal {
+        background-color: bisque;
+        padding: 5px;
+        border: 1px solid black;
+        text-align: center;
+        
+      }
+      #panal {
+        padding: 50px;
+        display: none;
+      }
+  
+       
+    </style>
+</head>
+<body>
+  
+  
+  <div id="flip">click to slide down</div>
+  <div id="panal">Hello World</div>
+
+
+
+
+
+
+<script src="assets/js/jquery_new.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function(){
+     $('#flip').click(function(){
+        $('#panal').slideToggle();
+     });
+    });
+  </script>
+
+
+</body>
+</html>
