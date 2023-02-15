@@ -29,33 +29,30 @@
         <p>This is the first sentance</p>
         <p>This is the second sentance</p> -->
     
-       <div id="flip">This change is for github
+       <div id="flip">This change is for kuch change github
         <p id="panel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium commodi placeat neque, repellat iure aliquid, eum quaerat quos esse obcaecati nobis nesciunt veritatis ut perferendis temporibus illo dolores laboriosam rerum?</p>
-       </div>
-  
-       
-   
+       </div>   
        <script src="bootstrap_file/js/bootstrap.js"></script>
     <script>
         $(document).ready(function(){
-            //toggle
-            // $('button').click(function(){
-            //     $('p').toggle();
-            // });
+            toggle
+            $('button').click(function(){
+                $('p').toggle();
+            });
 
-            //hideandshow
-            // $('#show').click(function(){
-            //     $('p').show();
-            // });
-            // $('#hide').click(function(){
-            //     $('p').hide();
-            // });
+            hideandshow
+            $('#show').click(function(){
+                $('p').show();
+            });
+            $('#hide').click(function(){
+                $('p').hide();
+            });
 
 
-            //fadeIn have 3 property i.e (fadeIn(), fadeIn("slow"), fadeIn(3000)//time)
-            // $("button").click(function(){
-            //     $("div").fadeIn(2000);
-            // });
+           // fadeIn have 3 property i.e (fadeIn(), fadeIn("slow"), fadeIn(3000)//time)
+            $("button").click(function(){
+                $("div").fadeIn(2000);
+            });
             $("#flip").click(function(){
                 $("#panel").slideDown("slow");
             });
